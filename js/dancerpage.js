@@ -1,3 +1,4 @@
+const unavailable = 'https://lh3.googleusercontent.com/F3OSChFCJwv4Yx1FCeYlnYTHRJ2qAfELVaP_g7wQcc-EG69Mu9LzOh6GhBM5t1-C0K2Us1LG6S8lJx88UOI8dS5Z2hSiJ4Us2oMZtc_2YWSuMqcWOBIhJRgixTaDLrIlAL1TrklT9k2AYaxFOUGYHtryx_5K14IT_fccgckv6yX-zPzrY1ejHz70AvciNFc6lmTUOYtBpQJo8kA-EoFfAHPUyv4WtdvrMHGVvsonrc_nMf73Qa1YhYmejidMciq99rxnlYYKRnhBk3oOQgcDI-Yh6HFq9hMWsmQE6TMNVNsxNyEBwzNuTrMesioiRT2UGnCJ4q7qofqUuDcLAFe9PpmnB1Rc1xiq240RIsgc6TAhcHJLnYjLli7Q6C1gC34KhYVTa9AdTnEWZqHD3fJ6iWqtMMqY9hxFsSv0rc3eExn3AIf2tsSgWuZJCmTOH35ShukMY70d8mexKuaWbORSNW-lCJQ-Ae3AbxWfaWOs0NbrQaMHff7GSlmuJLCmogZURkeqit_IiutbvNiywDv1c9WH7DJ85-KlVtbx2fBpGKXx8eSUT-cLoGcxB45NGrwpRHapKx-mNtdaZfqYgNWwPJMrYhFw4R8J9gvjcEBlOlo2Dh8lvcWamYfdXJac8BJew4WI1E2opD6I6TJIQY5brfGCFsga5IDjYSJ3MtguVuhZBHgZ6B3BAmk3=-no'
 const dancers={
 	freshmen : [
 		{name:'Ana Monfared'
@@ -320,7 +321,7 @@ function addDancerImage(dancer_obj, sectionId){
 	
 	//the actual dancer image
 	image = document.createElement('img');
-	image.src = dancer_obj['currentHeadshot'] == '' ? 'images/image_unavailable.jpg' : dancer_obj['currentHeadshot'];
+	image.src = dancer_obj['currentHeadshot'] == '' ? unavailable : dancer_obj['currentHeadshot'];
 
 	//add the image to the whole image div
 	dancerdiv.appendChild(image);
