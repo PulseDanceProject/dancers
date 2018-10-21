@@ -23,7 +23,7 @@ body{
 
 @font-face {
     font-family: "Neutra-Text";
-    src: url(../NeutraText-LightAlt.ttf) format("truetype");
+    src: url(NeutraText-LightAlt.ttf) format("truetype");
 }
 
 .hidden{
